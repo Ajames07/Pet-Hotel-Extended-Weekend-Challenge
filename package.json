@@ -1,0 +1,23 @@
+{
+  "name": "pet-hotel-extended-weekend-challenge",
+  "version": "1.0.0",
+  "description": "Welcome to the Pet hotel extended weekend project! The challenges require the following features to be added:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ajames07/Pet-Hotel-Extended-Weekend-Challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ajames07/Pet-Hotel-Extended-Weekend-Challenge/issues"
+  },
+  "homepage": "https://github.com/Ajames07/Pet-Hotel-Extended-Weekend-Challenge#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pg": "^7.4.3"
+  }
+}
