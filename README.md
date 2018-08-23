@@ -9,7 +9,7 @@ Welcome to the Pet hotel extended weekend project! The challenges require the fo
 - [x] install express
 - [x] create folders
 - [x] source relevent files
-- [] add basic layouts to each file
+- [x] add basic layouts to each file
 - [] Add owners
 - [] Add pets
 - [] Remove owners if no pets are assigned
@@ -18,6 +18,7 @@ Welcome to the Pet hotel extended weekend project! The challenges require the fo
 - [] Check out a pet
 - [] Show total number of pets next to each owner
 - [] Create DataBase with two tables pets & owners. add more tables as needed for stretch goals.
+- [] Advance file layouts
 
 ###Stretch goals
 -------------------

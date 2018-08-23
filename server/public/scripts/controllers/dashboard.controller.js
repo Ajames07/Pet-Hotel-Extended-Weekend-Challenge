@@ -4,6 +4,4 @@ app.controller('DashBoardController', ['$http', function($http) {
     
     self.pets = [];
 
-    
-    
 }]);//end DashBoardController
