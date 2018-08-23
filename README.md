@@ -4,16 +4,24 @@ Welcome to the Pet hotel extended weekend project! The challenges require the fo
 
 ##TO DO Base Mode
 -------------
+- [x] initialize project
+- [x] npm install
+- [x] install express
+- [x] create folders
+- [x] source relevent files
+- [] add basic layouts to each file
 - [] Add owners
 - [] Add pets
 - [] Remove owners if no pets are assigned
 - [] Remove pets
-- [] Check in / out a pet
+- [] Check in a pet
+- [] Check out a pet
 - [] Show total number of pets next to each owner
 - [] Create DataBase with two tables pets & owners. add more tables as needed for stretch goals.
 
 ###Stretch goals
 -------------------
+- [] source Angular Material UI
 - [] Update pets and owners
 - [] Keep track of visits
 - [] Add images for pets
