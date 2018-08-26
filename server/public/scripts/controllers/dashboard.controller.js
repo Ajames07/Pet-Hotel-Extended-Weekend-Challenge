@@ -12,11 +12,24 @@ app.controller('DashBoardController', ['$http', function($http) {
             data: petToAdd
         }).then((response) => {
             console.log('in addPet POST response',response);
-            // self.getPetData();
+            self.getPets();
         }).catch((error) => {
             console.log('ERROR caught in making POST request', error);
             alert('ERROR caught in making POST request')
         });
-    }
+    }//end addPets
 
+    self.getPets = function() {
+        $http({
+            method: 'GET',
+            url: '/dashboard'
+        }).then((response) => {
+            console.log('dashboard GET response', response);
+            self.assignments = response.data;
+        }).catch((error) => {
+            console.log('ERROR caught in dashboard GET', error);
+            alert('ERROR caught in dashboard GET');
+        });
+    }//end getPets
+    self.getPets();
 }]);//end DashBoardController
