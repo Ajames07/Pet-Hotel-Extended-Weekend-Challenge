@@ -1,17 +1,20 @@
 <div class="container">
     <h2>Guest reservation page</h2>
 
-    <form ng-submit="">
-        <input type="text" placeholder="Owner Name">
-        <input type="text" placeholder="Pets Name">
-        <input type="text" placeholder="Breed">
-        <input type="text" placeholder="Color">
+    <form ng-submit="vm.addPet(vm.petData)">
+        <input type="text" placeholder="Pets Name" ng-model="vm.addPet.pet_name">
+        <input type="text" placeholder="Breed" ng-model="vm.addPet.breed">
+        <input type="text" placeholder="Color" ng-model="vm.addPet.color">
+      <!--  <input type="text" placeholder="Checked in"> -->
         <input type="submit">
     </form>
-
-    <div>
-        <!-- add ng-repeat -->
-        <!-- add expression assignment -->
+    <div> 
+        <h2>Guest log</h2>
+        <ol ng-repeat="pet in vm.pets">
+            <li>{{pet.pet_name}}</li>
+            <li>{{pet.breed}}</li>
+            <li>{{pet.color}}</li>
+        </ol>
         <!-- add delete button -->
     </div>
 </div>

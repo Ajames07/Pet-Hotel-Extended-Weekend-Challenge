@@ -14,7 +14,7 @@ if (process.env.DATABASE_URL) {
         database:params.pathname.split('/')[1],
         ssl: true,
         max:10,
-        idleTimeoutMillis: 30000,
+        idleTimeoutMillis: 3000,
     };
 
 } else {
@@ -24,8 +24,8 @@ if (process.env.DATABASE_URL) {
         host: process.env.DATABASE_SERVER || 'localhost',
         port: process.env.DATABASE_PORT || 5432,
         database: process.env.DATABASE_NAME ||  'Pet_Hotel',
-        max: 20,
-        idleTimeoutMillis: 30000,
+        max: 10,
+        idleTimeoutMillis: 3000,
     };
 }
 
