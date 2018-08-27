@@ -1,13 +1,14 @@
 <div>
     <h2>Owners Database</h2>
 
-    <form ng-submit="">
-        <input type="text" placeholder="Name">
+    <form ng-submit="vm.addOwner(vm.ownerData)">
+        <input type="text" placeholder="Name" ng-model="vm.addOwner.name">
         <input type="submit">
     </form>
     <div>
-        <!-- add ng-repeat -->
-        <!-- add expression assignment -->
-        <!-- add delete button -->
+        <ol ng-repeat="owner in ownersLog">
+            <li>{{owner.name}}</li>
+            <button>Delete Owner</button>
+        </ol>
     </div>
 </div>

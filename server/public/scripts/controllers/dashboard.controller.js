@@ -3,7 +3,7 @@ app.controller('DashBoardController', ['$http', function($http) {
     const self = this;
     
     self.pets = [];
-    self.petData = { pet_name:'', breed:'', color:'' }
+    self.petData = { pet_name:'', breed:'', color:'' } 
 
     self.addPet = function(petToAdd) {
         $http({
@@ -27,7 +27,7 @@ app.controller('DashBoardController', ['$http', function($http) {
             console.log('dashboard GET response', response);
             self.assignments = response.data;
         }).catch((error) => {
-            console.log('ERROR caught in dashboard GET', error);
+            console.log('ERROR caught in dashboard GET',error);
             alert('ERROR caught in dashboard GET');
         });
     }//end getPets
