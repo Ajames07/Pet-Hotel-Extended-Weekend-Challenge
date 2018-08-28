@@ -3,6 +3,9 @@ app.controller('OwnersController', ['$http', function ($http) {
     const self = this;
 
     self.ownersLog = [];
+    ownerData = {
+        name:''
+    }
 
     self.addOwner = function(ownersName) {
         $http({
